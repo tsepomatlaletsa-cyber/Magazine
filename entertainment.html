@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entertainment | Youth Voice Magazine</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background-color:#eef2f7;
+}
+
+header{
+background:#1f3a5f;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+nav {
+  background:#333;
+  position: sticky; 
+  top: 0;           
+  z-index: 1000;    
+}
+nav ul{
+display:flex;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+flex:1;
+}
+
+nav ul li a{
+display:block;
+padding:15px;
+text-align:center;
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+background:#ff6600;
+}
+
+nav ul li a.active{
+  background:#ff6600;
+  font-weight:bold;
+}
+
+/* Section Styling */
+
+section{
+padding:25px;
+}
+
+/* Card Layout */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:space-between;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:6px;
+width:32%;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+box-sizing:border-box;
+transition: transform 0.3s;
+}
+
+.card:hover{
+transform: translateY(-5px);
+}
+
+.card img{
+width:100%;
+border-radius:5px;
+}
+
+.card h3{
+margin-top:10px;
+}
+
+/* Footer */
+
+footer{
+background:#1f3a5f;
+color:white;
+text-align:center;
+padding:12px;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Youth Voice Online Magazine</h1>
+<p>Entertainment: Music, Movies, Celebrity News</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="feature.html">Feature Stories</a></li>
+<li><a href="entertainment.html" class="active">Entertainment</a></li>
+<li><a href="multimedia.html">Multimedia</a></li>
+<li><a href="editorial.html">Editorial Team</a></li>
+</ul>
+</nav>
+
+<section>
+<h2>Top Entertainment Stories</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/music.jpg" alt="Music">
+<h3>Rising Musicians of 2026</h3>
+<p>
+Young artists in Lesotho and Africa are creating music that is gaining global attention.
+</p>
+</div>
+
+<div class="card">
+<img src="images/movies.jpg" alt="Movies">
+<h3>New African Film Releases</h3>
+<p>
+Student filmmakers and independent studios are producing films that celebrate local culture.
+</p>
+</div>
+
+<div class="card">
+<img src="images/celebrity.jpg" alt="Celebrity News">
+<h3>Celebrity Spotlights</h3>
+<p>
+Interviews and stories about rising stars, awards, and major entertainment events.
+</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Youth Voice Magazine | Limkokwing University</p>
+</footer>
+
+</body>
+
+</html>
