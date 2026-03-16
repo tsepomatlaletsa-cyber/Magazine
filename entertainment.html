@@ -103,12 +103,22 @@ section {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 600px) {
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
   .card {
-    width: 32%; /* 3 per row on desktop */
+    width: 48%;
   }
 }
 
+/* Desktop view */
+@media screen and (min-width: 992px) {
+  .card {
+    width: 32%;
+  }
+}
 /* Footer */
 footer {
   background: #1f3a5f;

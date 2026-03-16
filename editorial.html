@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Editorial Team | Youth Voice Magazine</title>
 
@@ -13,6 +13,7 @@ body {
   background-color: #eef2f7;
 }
 
+/* Header */
 header {
   background: #1f3a5f;
   color: white;
@@ -20,22 +21,25 @@ header {
   padding: 25px;
 }
 
+/* Navigation */
 nav {
-  background:#333;
+  background: #333;
   position: sticky;
-  top: 0;           
-  z-index: 1000;    
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  flex: 1;
+  flex: 1 1 100%; /* mobile default */
 }
 
 nav ul li a {
@@ -50,23 +54,26 @@ nav ul li a:hover {
   background: #ff6600;
 }
 
-nav ul li a.active{
-  background:#ff6600;
-  font-weight:bold;
+nav ul li a.active {
+  background: #ff6600;
+  font-weight: bold;
 }
 
 /* Team Section */
 .team {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 30px;
+  gap: 20px;
 }
 
 .member {
   background: white;
   padding: 25px;
   border-radius: 6px;
-  width: 45%;
+  width: 100%; /* mobile default */
+  max-width: 600px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
   box-sizing: border-box;
@@ -82,10 +89,11 @@ nav ul li a.active{
   height: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
+  object-fit: cover;
 }
 
 .member h3 {
-  margin: 5px 0;
+  margin: 10px 0 5px;
 }
 
 .member p {
@@ -110,6 +118,36 @@ footer {
   padding: 12px;
   margin-top: 30px;
 }
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  .member {
+    width: 48%; /* optional if you want 2 editors side by side in future */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .member {
+    width: 40%; /* scales nicely on desktop */
+  }
+}
+@media screen and (min-width: 600px) {
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  .card {
+    width: 48%;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 992px) {
+  .card {
+    width: 32%;
+  }
+}
+
 </style>
 
 </head>
@@ -117,50 +155,49 @@ footer {
 <body>
 
 <header>
-<h1>Youth Voice Online Magazine</h1>
-<p>Meet the Editor</p>
+  <h1>Youth Voice Online Magazine</h1>
+  <p>Meet the Editor</p>
 </header>
 
 <nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="feature.html">Feature Stories</a></li>
-<li><a href="entertainment.html">Entertainment</a></li>
-<li><a href="multimedia.html">Multimedia</a></li>
-<li><a href="editorial.html" class="active">Editorial Team</a></li>
-</ul>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="feature.html">Feature Stories</a></li>
+    <li><a href="entertainment.html">Entertainment</a></li>
+    <li><a href="multimedia.html">Multimedia</a></li>
+    <li><a href="editorial.html" class="active">Editorial Team</a></li>
+  </ul>
 </nav>
 
 <section class="team">
 
-<div class="member">
-<img src="images/editor.webp" alt="Editor Photo">
-<h3>Kabelo Kabza</h3>
-<p>Editor-in-Chief & Multimedia Creator</p>
+  <div class="member">
+    <img src="images/editor.webp" alt="Editor Photo">
+    <h3>Kabelo Kabza</h3>
+    <p>Editor-in-Chief & Multimedia Creator</p>
 
-<p>
-I am a passionate journalist and multimedia creator, dedicated to telling stories
-that inspire and inform youth across Lesotho and beyond. This magazine focuses
-on lifestyle, culture, technology, and entertainment, combining articles, photos,
-videos, and podcasts to share engaging content.
-</p>
+    <p>
+      I am a passionate journalist and multimedia creator, dedicated to telling stories
+      that inspire and inform youth across Lesotho and beyond. This magazine focuses
+      on lifestyle, culture, technology, and entertainment, combining articles, photos,
+      videos, and podcasts to share engaging content.
+    </p>
 
-<p><strong>Skills:</strong> Writing, Video Editing, Podcast Production, Photography</p>
+    <p><strong>Skills:</strong> Writing, Video Editing, Podcast Production, Photography</p>
 
-<p>
-Follow me on: 
-<a href="#">Twitter</a> | 
-<a href="#">Instagram</a> | 
-<a href="#">LinkedIn</a>
-</p>
-</div>
+    <p>
+      Follow me on: 
+      <a href="#">Twitter</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a>
+    </p>
+  </div>
 
 </section>
 
 <footer>
-<p>© 2026 Youth Voice Magazine | Limkokwing University</p>
+  <p>© 2026 Youth Voice Magazine | Limkokwing University</p>
 </footer>
 
 </body>
-
 </html>

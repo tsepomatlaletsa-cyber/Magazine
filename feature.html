@@ -98,16 +98,22 @@ section {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .article {
-    width: 32%; /* 3 per row on desktop */
-    margin-right: 2%;
+@media screen and (min-width: 600px) {
+  nav ul li {
+    flex: 1 1 auto;
   }
-  .article:nth-child(3n) {
-    margin-right: 0;
+
+  .card {
+    width: 48%;
   }
 }
 
+/* Desktop view */
+@media screen and (min-width: 992px) {
+  .card {
+    width: 32%;
+  }
+}
 /* Footer */
 footer {
   background: #1f3a5f;
