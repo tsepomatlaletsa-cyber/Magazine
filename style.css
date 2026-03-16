@@ -1,0 +1,347 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #eef2f7;
+}
+
+/* Header */
+header {
+  background: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  flex: 1 1 100%; /* mobile default full width */
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #ff6600;
+}
+
+nav ul li a.active {
+  background: #ff6600;
+  font-weight: bold;
+}
+
+/* Hero Banner */
+.hero {
+  background-image: url("images/banner.jpg");
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 25px;
+}
+
+/* Featured Article */
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 6px;
+  height: auto;
+}
+
+/* Article Grid */
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  width: 100%; /* mobile default */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+/* Article Cards */
+.article {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 100%; /* mobile default */
+  box-sizing: border-box;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.article h2 {
+  margin-top: 0;
+}
+
+/* Section Styling */
+section {
+  padding: 25px;
+}
+
+/* Card Layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  width: 100%; /* mobile default */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+
+/* Media Cards */
+.media-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  width: 100%; /* mobile default */
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Video and Audio */
+iframe, audio {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.member {
+  background: white;
+  padding: 25px;
+  border-radius: 6px;
+  width: 100%; /* mobile default */
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.member h3 {
+  margin: 10px 0 5px;
+}
+
+.member p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.member a {
+  color: #1f3a5f;
+  text-decoration: none;
+}
+
+.member a:hover {
+  text-decoration: underline;
+}
+
+
+/* Trending */
+.trending {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.trending ul {
+  padding-left: 20px;
+}
+
+/* Video */
+.video {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/* Footer */
+footer {
+  background: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 30px;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  .member {
+    width: 48%; /* optional if you want 2 editors side by side in future */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .member {
+    width: 40%; /* scales nicely on desktop */
+  }
+}
+@media screen and (min-width: 600px) {
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  .card {
+    width: 48%;
+  }
+}
+
+
+/* Media Queries */
+/* Tablet view */
+@media screen and (min-width: 600px) {
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  .card {
+    width: 48%;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 992px) {
+  .card {
+    width: 32%;
+  }
+}
+
